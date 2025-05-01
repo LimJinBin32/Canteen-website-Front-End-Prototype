@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="../styles/order.css">
+    <link rel="stylesheet" href="../styles/consistent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <header>
+            <h1><i>WESTERN <sub>HAVEN</sub></i></h1>
+            <nav>
+                <ul>
+                    <li><a class="navi" href="index.html">Home</a></li>
+                    <li><a class="navi" href="Food_Menu.html" title="Food Menu">Menu</a></li>
+                    <li><a class="navic" href="order.html" title="order food">Order</a></li>
+                    <li><a class="navi" href="About_us.html">About us</a></li>
+                    <li><a class="navi" href="Member.html" title="Member">Member registration</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <h2 id="order_now">- Start Ordering Now! -</h2>
+            <div class="selection">
+                <label class="bold_title">Type of order:</label>
+                <br>
+                <span class="order_type"><input name="order_type" type="radio" value="Dine in" checked="checked">Dine in</span>
+                <span class="order_type"><input name="order_type" type="radio" value="Takeaway">Takeaway</span>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Grilled</h2>
+                        <div class="images"><img src="../images/Grilledchicken3.png" alt="Grilledchicken3.png" title="Grilled Chicken"></div>
+                        <div>
+                            <h3>chicken chop</h3>
+                            <h3>$5</h3>
+                            <div class="item_addition">
+                                <label for="CC1">Pasta/Fries:</label>
+                                <select id="CC1" name="Chicken Chop(pasta/fries)">
+                                    <option value="nil">-</option>
+                                    <option value="Fries">Fries</option>
+                                    <option value="Creamy pasta">Creamy pasta</option>
+                                    <option value="Tomato pasta">Tomato pasta</option>
+                                    <option value="Black Pepper pasta">Black Pepper pasta</option>
+                                    <option value="Aglio pasta">Aglio pasta</option>
+                                </select>
+                            </div>
+                            <div class="item_addition">
+                                <label for="CC2">sides:</label>
+                                <select id="CC2" name="Chicken Chop(sides)">
+                                    <option value="nil">-</option>
+                                    <option value="Corn">Corn</option>
+                                    <option value="Mashed Potato">Mashed Potato</option>
+                                    <option value="Salad">Salad</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="CC3">Special request:</label>
+                                <textarea class="Special_Request" name="Chicken Chop Special request" id="CC3" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="item_addition">
+                                <label for="CC4">Quantity:</label>
+                                <input id="CC4" class="Quantity" type="number" min="0" max="5" name="Quantity of Chicken Chop" placeholder="Amount">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="images"><img src="../images/grilledfish3.png" alt="grilledfish3.png" title="Grilled Chicken"></div>
+                        <div>
+                            <h3>Grilled Fish</h3>
+                            <h3>$5</h3>
+                            <div class="item_addition">
+                                <label for="GF1">Pasta/Fries:</label>
+                                <select id="GF1" name="Grilled Fish(pasta/fries)">
+                                    <option value="nil">-</option>
+                                    <option value="Fries">Fries</option>
+                                    <option value="Creamy pasta">Creamy pasta</option>
+                                    <option value="Tomato pasta">Tomato pasta</option>
+                                    <option value="Black Pepper pasta">Black Pepper pasta</option>
+                                    <option value="Aglio pasta">Aglio pasta</option>
+                                </select>
+                            </div>
+                            <div class="item_addition">
+                                <label for="GF2">sides:</label>
+                                <select id="GF2" name="Grilled Fish(sides)">
+                                    <option value="nil">-</option>
+                                    <option value="Corn">Corn</option>
+                                    <option value="Mashed Potato">Mashed Potato</option>
+                                    <option value="Salad">Salad</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="GF3">Special request:</label>
+                                <textarea class="Special_Request" name="Grilled Fish Special request" id="GF3" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="item_addition">
+                                <label for="GF4">Quantity:</label>
+                                <input id="GF4" class="Quantity" type="number" min="0" max="5" name="Quantity of Grilled Fish" placeholder="Amount">
+                            </div>
+                        </div>
+
+                </div>
+                <div class="flex-item">
+                    <h2>Battered</h2>
+                    <div class="images"><img src="../images/Chickencutlet3.png" alt="Chickencutlet3.png" title="Chicken Cutlet"></div>
+                    <div>
+                        <h3>Chicken Cutlet</h3>
+                        <h3>$5</h3>
+                        <div class="item_addition">
+                            <label for="cc1">Pasta/Fries:</label>
+                            <select id="cc1" name="Chicken Cutlet(pasta/fries)">
+                                <option value="nil">-</option>
+                                <option value="Fries">Fries</option>
+                                <option value="Creamy pasta">Creamy pasta</option>
+                                <option value="Tomato pasta">Tomato pasta</option>
+                                <option value="Black Pepper pasta">Black Pepper pasta</option>
+                                <option value="Aglio pasta">Aglio pasta</option>
+                            </select>
+                        </div>
+                        <div class="item_addition">
+                            <label for="cc2">sides:</label>
+                            <select id="cc2" name="Chicken Cutlet(sides)">
+                                <option value="nil">-</option>
+                                <option value="Corn">Corn</option>
+                                <option value="Mashed Potato">Mashed Potato</option>
+                                <option value="Salad">Salad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cc3">Special request:</label>
+                            <textarea class="Special_Request" name="Chicken Cutlet Special request" id="cc3" cols="30" rows="4"></textarea>
+                        </div>
+                        <div class="item_addition">
+                            <label for="cc4">Quantity:</label>
+                            <input id="cc4" class="Quantity" type="number" min="0" max="5" name="Quantity of Chicken Cutlet" placeholder="Amount">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="images"><img src="../images/Beer-BatteredFish3.png" alt="Beer-BatteredFish3.png" title="Beer-Battered Fish"></div>
+                    <div>
+                        <h3>Beer-Battered Fish</h3>
+                        <h3>$5</h3>
+                        <div class="item_addition">
+                            <label for="BBF1">Pasta/Fries:</label>
+                            <select id="BBF1" name="Beer-Battered Fish(pasta/fries)">
+                                <option value="nil">-</option>
+                                <option value="Fries">Fries</option>
+                                <option value="Creamy pasta">Creamy pasta</option>
+                                <option value="Tomato pasta">Tomato pasta</option>
+                                <option value="Black Pepper pasta">Black Pepper pasta</option>
+                                <option value="Aglio pasta">Aglio pasta</option>
+                            </select>
+                        </div>
+                        <div class="item_addition">
+                            <label for="BBF2">sides:</label>
+                            <select id="BBF2" name="Beer-Battered Fish(sides)">
+                                <option value="nil">-</option>
+                                <option value="Corn">Corn</option>
+                                <option value="Mashed Potato">Mashed Potato</option>
+                                <option value="Salad">Salad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="BBF3">Special request:</label>
+                            <textarea class="Special_Request" name="Beer-Battered Fish Special request" id="BBF3" cols="30" rows="4"></textarea>
+                        </div>
+                        <div class="item_addition">
+                            <label for="BBF4">Quantity:</label>
+                            <input id="BBF4" class="Quantity" type="number" min="0" max="5" name="Quantity of Beer-Battered Fish" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div id="flex-container2">   
+                <h2>Main dish</h2>
+                <div id="alone">
+                    <div>
+                        <div class="images"><img src="../images/Friedrice2.png" alt="Friedrice2.png" title="Fried Rice W/ Wing"></div>
+                        <h3>Fried Rice W/ Wing</h3>  
+                        <h3>$4.50</h3>
+                        <div>
+                            <label for="FRW">Special request:</label>
+                            <textarea class="Special_Request" name="Fried Rice W/ Wing Special request" id="FRW" cols="30" rows="4"></textarea>
+                        </div>
+                        <div class="item_addition">
+                            <label for="FRW2">Quantity:</label>
+                            <input id="FRW2" class="Quantity" type="number" min="0" max="5" name="Quantity of Fried Rice W/ Wing" placeholder="Amount">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="images"><img src="../images/Agio_Olio_with_prawns.png" alt="Agio Olio with prawns.png" title="Agio Olio W/ Prawns"></div>
+                        <h3>Aglio Olio W/ Prawns</h3>
+                        <h3>$5</h3>
+                        <div>
+                            <label for="AOP">Special request:</label>
+                            <textarea class="Special_Request" name="Agio Olio W/ Prawns Special request" id="AOP" cols="30" rows="4"></textarea>
+                        </div>
+                        <div class="item_addition">
+                            <label for="AOP2">Quantity:</label>
+                            <input id="AOP2" class="Quantity" type="number" min="0" max="5" name="Quantity of Aglio Olio W/ Prawns" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article>
+                <h2>Ala-carte</h2>
+                <div class="Ala-carte">
+                    <div class="A_item" id="cheesy-nachos">
+                        <img class="left" src="../images/cheesy-nachos.jpg" alt="Image of Cheesy Nachos" title="Delicious Cheesy Nachos">
+                        <h2>Cheesy Nachos</h2>
+                        <div class="A_Quantity">
+                            <label for="CN">Quantity:</label>
+                            <input id="CN" class="Quantity" type="number" min="0" max="5" name="Quantity of Cheesy Nachos" placeholder="Amount">
+                        </div>
+                        <p>$2.50</p>
+                    </div>
+                    <div class="A_item" id="Nugget">
+                        <img class="left" src="../images/Nuggets.jpg" alt="Image of Nuggets" title="Delicious Nuggets">
+                        <h2>Nugget</h2>
+                        <div class="A_Quantity">
+                            <label for="N">Quantity:</label>
+                            <input id="N" class="Quantity" type="number" min="0" max="5" name="Quantity of Nuggets 6pcs" placeholder="Amount">
+                        </div>
+                        <p>$3.50</p>
+                    </div>
+                    <div class="A_item" id="Cheesy-Fries">
+                        <img class="left" src="../images/cheese-fries.jpg" alt="Image of Cheese Fries" title="Cheese Fries">
+                        <h2>Cheesy Fries</h2>
+                        <div class="A_Quantity">
+                            <label for="CF">Quantity:</label>
+                            <input id="CF" class="Quantity" type="number" min="0" max="5" name="Quantity of Cheese Fries" placeholder="Amount">
+                        </div>
+                        <p>$2.80</p>
+                    </div>
+                </div>
+            </article>
+            <div id="diet">
+                <label class="bold_title">Dietary requirements:</label>
+                <br>
+                <input type="checkbox" name="Dietary requirement" value="Nil">Nil
+                <input type="checkbox" name="Dietary requirement" value="Vegetarian">Vegetarian
+                <input type="checkbox" name="Dietary requirement" value="Vegan">Vegan
+                <input type="checkbox" name="Dietary requirement" value="Gluten-Free">Gluten-Free
+                <input type="checkbox" name="Dietary requirement" value="Lactose-Free">Lactose-Free
+                <input type="checkbox" name="Dietary requirement" value="Nut-Free">Nut-Free
+                <input type="checkbox" name="Dietary requirement" value="Diabetes frendly">Diabetes frendly
+                <input type="checkbox" name="Dietary requirement" value="Heart-Healthy">Heart-Healthy
+            </div>
+
+            <div class="selection">
+                <label class="bold_title">Type of payment:</label>
+                <br>
+                <span class="payment_type"><input name="payment_type" type="radio" value="Cash" checked="checked">Cash</span>
+                <span class="payment_type"><input name="payment_type" type="radio" value="MasterCard">MasterCard</span>
+                <span class="payment_type"><input name="payment_type" type="radio" value="Nets">Nets</span> 
+                <span class="payment_type"><input name="payment_type" type="radio" value="Visa">Visa</span> 
+            </div>
+
+            <div id="form_button">
+                <button type="submit">Order</button>
+                <button type="reset">Clear order</button>
+            </div>
+        </form>
+
+        <div id="footer-header">
+            <div id="social">
+                <h1 style="padding: 20px 0 0px 20px;"><i>WESTERN <sub>HAVEN</sub></i></h1>
+                <div id="icon">
+                    <a href="http://www.Facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.Instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div id="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Food_Menu.html" title="Food Menu">Menu</a></li>
+                </ul>
+    
+                <ul>
+                    <li><a href="order.html" title="order food">Order</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="Member.html" title="Member">Member registration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            copyright&copy; 2023 Western Haven lnc. All rights reserved
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Dancing+Script&family=Kalnia&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*  {margin: 0;padding: 0;}
+
+main {
+    border: 1px black solid;
+    background-color: rgb(231, 209, 190);
+}
+
+header {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.AU {
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color: black;
+    font-variant: small-caps;
+}
+
+#Philosophy {
+    font-size: 1.7em;
+    font-family: "Diphylleia";
+    display: flex;
+    border-radius: 30px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: burlywood;
+}
+
+#Philosophy img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-right: 10px;
+    width: 100%;
+    flex: 2;
+}
+
+#Philosophy div {
+    flex: 3;
+    padding: 5px;
+}
+
+#Philosophy h2 {
+    font-family: 'Permanent Marker';
+}
+
+/* Philosophy end */
+
+/* fresh start */
+
+#fresh {
+    display:flex ;
+    font-size: 1.7em;
+    border-radius: 30px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: burlywood;
+}
+
+#fresh img {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 10px;
+    width: 100%;
+    flex: 2;
+}
+
+#fresh-text h2 {
+    font-family: 'Permanent Marker';
+}
+
+#fresh-text {
+    flex: 3;
+    padding: 5px;
+    font-family: "Diphylleia";
+}
+/* fresh end */
+
+/* Halal part */
+.Halal {
+    display:flex ;
+    font-size: 1.75em;
+    border-radius: 30px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.Halal div {
+    flex: 3;
+}
+
+.Halal img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-right: 10px;
+    width: 100%;
+    flex: 2;
+}
+
+.Halal p {
+    font-family: "Diphylleia";
+    padding-left: 10px;
+}
+
+.Halal h2 {
+    font-family: 'Permanent Marker';
+}
+
+#halal {
+    mix-blend-mode: multiply;
+    padding: 15px 0 15px 0;
+}
+
+/* Halal end */
+
+/* location start */
+
+#location {
+    border-top: 1px solid black;
+}
+
+#location iframe {
+    height: 400px;
+}
+
+#Find {
+    font-size: 1.7em;
+    padding: 5px;
+    font-family: 'Permanent Marker';
+}
+
+#address {
+    font-size: 1.7em;
+    padding: 0 10px 10px 10px;
+    font-family: "Diphylleia";
+}
+
+#work-time {
+    font-size: 1.7em;
+    padding: 0 0 0 10px;
+    font-family: "Diphylleia";
+}
+
+/* location end */
+
+#contact {
+    font-size: 1.7em;
+    margin: 15px auto;
+    width: 800px;
+    border: 1px solid black;
+    background-color: burlywood;
+    font-family: "Diphylleia";
+    padding: 5px;
+}
+
+#contact a:hover {
+    color: red;
+}
+#contact p {
+    text-align: center;
+}

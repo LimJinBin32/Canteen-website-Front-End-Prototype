@@ -1,0 +1,127 @@
+main {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+
+header  {
+    display: flex;
+    color: white; 
+    text-align: center;
+    justify-content: space-between;
+    padding: 2% 1.5%;
+}
+
+header h1 {
+    padding-top: 5px;
+    text-shadow: 5px 5px 2px red;
+}
+
+h1 sub {
+    font-size: 0.7em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end ;
+}
+
+nav {
+    color: white;
+    text-align: center;
+    height: 2em;
+    font-size: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    display: block; 
+    font-size: 0.9em;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+nav a:active {
+    color: red;
+}
+
+.navic:visited {
+    color: yellow;
+}
+/* header end */
+
+/* footer start */
+#footer-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#footer-header h1 {
+    padding-top: 10px;
+    text-shadow: 5px 5px 2px red;
+    font-size: 3em;
+    color: whitesmoke;
+}
+
+#footer-header a:link {
+    color: whitesmoke;
+}
+
+#footer-header a:visited {
+    color: whitesmoke;
+}
+
+#footer-header a:hover {
+    color: whitesmoke;
+    opacity: 0.75;
+}
+
+#icon i {
+    padding: 10px 15px 0 15px;
+    color: whitesmoke;
+}
+
+#icon {
+    padding-left: 130px;
+    font-size: 1.3em;
+}
+
+#footer-links {
+    display: flex;
+    color: whitesmoke;
+}
+
+#footer-links li {
+    padding: 10px 40px 10px 10px;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+#footer-links a {
+    text-decoration: none;
+
+}
+
+footer {
+    height: 30px;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    padding-top: 8px;
+    color: whitesmoke;
+}

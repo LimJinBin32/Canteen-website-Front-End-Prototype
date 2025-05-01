@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member</title>
+    <link rel="stylesheet" href="../styles/Member.css">
+    <link rel="stylesheet" href="../styles/consistent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <main>
+        <header>
+            <h1><i>WESTERN <sub>HAVEN</sub></i></h1>
+            <nav>
+                <ul>
+                    <li><a class="navi" href="index.html">Home</a></li>
+                    <li><a class="navi" href="Food_Menu.html" title="Food Menu">Menu</a></li>
+                    <li><a class="navi" href="order.html" title="order food">Order</a></li>
+                    <li><a class="navi" href="About_us.html">About us</a></li>
+                    <li><a class="navic" href="Member.html" title="Member">Member registration</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <br>
+            <div id="Member_benefits">
+                <img src="../images/Points_system.png" alt="Points system" title="Points system">
+                <div>
+                    <div id="Member_title">Member benefits</div>
+                    <p>Earn 5 points with every $1 spent</p>
+                    <div class="Benefit_explanation">The more you accumulate, the more perks u get</div>
+                    <br>
+                    <p>Birthday Perks</p>
+                    <div class="Benefit_explanation">Earn 1.5x points and a free meal on your birthday month</div>
+                    <br>
+                    <p>welcome vouchers</p>
+                    <div class="Benefit_explanation">Get vouchers for free food and discounts!</div>
+                </div>
+            </div>
+            <h2 id="MR">- Member Registration -</h2>
+            <div class="Member">
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <em>NOTE - Fields marked with <span class="asterick">*</span> are required</em>
+                    <br>
+                    <div>
+                        <fieldset>
+                            <legend>Login Particulars</legend>
+                            <div>
+                                <label for="LID">LoginID<span class="asterick">*</span>:</label>
+                                <input class="increase" name="loginID" id="LID" type="text" placeholder="Enter your loginID" required title="loginID is 6 digits followed by 1 letter" pattern="[1-9]{6}[A-Za-z]{1}">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="Password">Password<span class="asterick">*</span>:</label>
+                                <input class="increase" id="Password" name="Password" type="password" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" minlength="10" title="Password requires 10 or more characters that are of at least one number, and one uppercase and lowercase letter."    required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Personal Infomation</legend>
+                            <div>
+                                <label for="name">Name<span class="asterick">*</span>:</label>
+                                <input class="increase" name="Name" id="name" type="text" placeholder="Enter your name" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="Mobile">Mobile Number<span class="asterick">*</span>:</label>
+                                <input class="increase" id="Mobile" name="Mobile Number" placeholder="Enter your Mobile Number" type="tel" pattern="[689]{1}[1-9]{7}" maxlength="8" title="Mobile number is 8 digits, first one is 6,8 or 9" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label>Gender<span class="asterick">*</span>:</label>
+                                <span class="G"><input name="Gender" type="radio" value="M" checked>Male</span>
+                                <span class="G"><input name="Gender" type="radio" value="F" >Female</span>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="Email">Email address<span class="asterick">*</span>:</label>
+                                <input class="increase" id="Email" name="Email" type="email" placeholder="Enter your email address">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="FF">Favourite Food:</label>
+                                <select style="width: 170px;" class="increase" name="Favourite Food" id="FF">
+                                    <option value="nil">-</option>
+                                    <option value="Chicken Cutlet">Chicken Cutlet</option>
+                                    <option value="Chicken Chop">Chicken Chop</option>
+                                    <option value="Grilled Fish">Grilled Fish</option>
+                                    <option value="Beer-Battered Fish">Beer-Battered Fish</option>
+                                    <option value="Fried Rice W/ Wing">Fried Rice W/ Wing</option>
+                                    <option value="Aglio Olio W/ Prawns">Aglio Olio W/ Prawns</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="date">Birthday:</label>
+                                <input class="increase" id="date" type="date" name="Birthday date">
+                            </div>
+                            <br>
+                            <div>
+                                <label id="Address" for="address">Address:</label>
+                                <textarea placeholder="Enter your house address" name="Address" id="address" cols="20" rows="3"></textarea>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <button type="submit">Sign up</button>
+                            <button type="reset">reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div id="footer-header">
+            <div id="social">
+                <h1 style="padding: 20px 0 0px 20px;"><i>WESTERN <sub>HAVEN</sub></i></h1>
+                <div id="icon">
+                    <a href="http://www.Facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.Instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div id="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Food_Menu.html" title="Food Menu">Menu</a></li>
+                </ul>
+    
+                <ul>
+                    <li><a href="order.html" title="order food">Order</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="Member.html" title="Member">Member registration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            copyright&copy; 2023 Western Haven lnc. All rights reserved
+        </footer>
+    </main>
+</body>
+</html>

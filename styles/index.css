@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Dancing+Script&family=Kalnia&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*  {margin: 0;padding: 0;}
+
+/* navigation menu */
+
+.start {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.38),rgba(0,0,0,0))
+    ,url(../images/western_food.jpg);
+    background-size: cover;
+}
+
+
+#all, #footer-header, .start, section{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hometextbox {
+    margin-top: 10px;
+    width: 600px;
+    height: 630px;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+}
+
+#hometextbox h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Dancing Script';
+    margin-bottom: 15px;
+}
+.homeheader {
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: "Diphylleia";
+}
+
+.hometext  {
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Diphylleia";  
+}
+
+.button {
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: whitesmoke;
+    border: 1px solid white;
+    background-color: red;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: "Bebas Neue";
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.button:hover {
+    background-color: darkgray ;
+    color: yellow;
+    transform: scale(1.2);
+}
+
+/* Slider */
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    /* margin: 0; */
+    /* left: 0; */
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left:0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300% ;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+/* Signature dish */
+
+#signature {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(231, 209, 190);
+    font-family: "Diphylleia";
+}
+
+#signature p {
+    padding-top: 15px;
+}
+
+#Sig-dish {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    height: 350px;
+    position: relative;
+}
+
+#Sig-dish img {
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    filter: brightness(55%);
+}
+
+.mid-text {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 1.7em;
+}
+
+.text1 {
+    left: 135px;
+    top: 160px;
+}
+
+.text2 {
+    left: 600px;
+    top: 160px;
+}
+
+/* member benefit */
+
+article {
+    background-color: rgb(231, 209, 190);
+    text-align: center;
+}
+
+article h2 {
+    color: black;
+    font-size: 2.5em;
+    font-family: 'Permanent Marker';
+}
+
+div.grid-con span {
+    font-family: "Diphylleia";
+}
+
+div.grid-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    padding-bottom: 10px;
+}
+
+div.grid-con img {
+    width: 100%;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+div.grid-con img:hover {
+    box-shadow: 5px 5px 10px;
+    transition: 0.5s;
+    color: red;
+    transform: translateY(-10px);
+}
+
+div.grid-con span {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+div.grid-con div {
+    margin: 5px;
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Dancing+Script&family=Kalnia&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*  {margin: 0;padding: 0;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(0,0,0,0.9);
+}
+
+main {
+    background-color: rgb(231, 209, 190);
+}
+
+/* main menu */
+
+#FM {
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color: black;
+    font-variant: small-caps;
+}
+
+#button {
+    position: absolute;
+    left: 610px;
+    top: 210px;
+}
+
+#button img:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 5px 0;
+    color: rgb(231, 209, 190);
+    transition: 0.4s;
+}
+
+#set {
+    height: 160px;
+    border-radius: 50%;
+}
+
+div.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.flex-container img,#flex-container2 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    max-width: 200px;
+    border: 1px solid black;
+} 
+
+div.images {
+    margin: 15px;
+    transition-duration: 0.3s;
+}
+
+div.images:hover {
+    transform: scale(1.1);
+}
+
+div.flex-item {
+    border: 1px solid black;
+    flex: 1;
+    text-align: center;
+}
+
+.flex-item div, #alone div {
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+#flex-container2 {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#alone {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Diphylleia";
+}
+
+.flex-container h3, #flex-container2 h3 {
+    font-size: 1.5em;
+}
+
+.flex-container p {
+    font-family: "Diphylleia";
+}
+
+/* sides */
+
+.addition {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.flex-container h2, .addition h2, .Ala-carte h2, #flex-container2 h2 {
+    font-size: 2.5em;
+}
+
+.addition h2, .Ala-carte h2 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+img.left {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+
+div.sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+div.sides div, div.pasta div, div.Ala-carte div{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+    margin: 0 10px 10px 10px;
+    background-color: burlywood;
+}
+
+div.sides p, div.pasta p, div.Ala-carte p {
+    font-size: 1.5em;
+    border-top: 3px dashed black;
+    padding: 10px;
+    font-family: "Diphylleia";
+}
+
+div.pasta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+img.right {
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    height: 205px;
+}
+
+div.Ala-carte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    text-align: center;
+    border: 1px solid black;
+}
+
+article h2 {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.Alacarte {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
