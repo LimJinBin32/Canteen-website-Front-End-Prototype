@@ -67,6 +67,6 @@ See the [LICENSE](./LICENSE) file for details.
 ## 🙋‍♂️ Author
 
 **Lim Jin Bin**  
-Year 1 — AI & Data Engineering 
+Y1 AI & Data Engineering 
 Nanyang Polytechnic
 *Module: Internet and Web Development*
